@@ -1,0 +1,16 @@
+<jsp:root version="2.0"
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:layout="urn:jsptagdir:/WEB-INF/tags/layout"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
+	xmlns:spring="http://www.springframework.org/tags">
+    <jsp:directive.page contentType="text/html" />
+    
+    <layout:form-personne titre="view.nouvelle.titre">
+        <div class="row">
+		    <util:link classe="span1 button secondaire" url="personnes/liste" libelle="global.bouton.annuler"/>
+	        <spring:message var="ajouter" code="view.nouvelle.bouton.ajouter" />
+			<input class="button pull-right" type="submit" value="${ajouter}" />
+		</div>
+	</layout:form-personne>
+
+</jsp:root>
